@@ -1,0 +1,29 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f23;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+  padding: 20px;
+}
+
+.dashboard h1 {
+  font-size: 2.5em;
+  color: #00ff88;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.dashboard p {
+  color: #aaa;
+  font-size: 1.1em;
+}
