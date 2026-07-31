@@ -169,7 +169,7 @@ advanced-ids/
 
 ## Author
 
-Aryan Patil - Sheffield University
+Aryan Patil - University of Sheffield
 Email: akpatil1@sheffield.ac.uk
 
 ## License
