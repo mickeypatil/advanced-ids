@@ -1,0 +1,24 @@
+﻿version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///ids_alerts.db
+    volumes:
+      - ./ids_alerts.db:/app/ids_alerts.db
+
+  frontend:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3002:3002"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    command: sh -c "npm install && npm start"
